@@ -1,6 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEdit } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEdit } from '@fortawesome/free-solid-svg-icons'
 
 class Header extends React.Component {
     constructor(props) {
@@ -40,8 +40,8 @@ class Header extends React.Component {
             name = "email"
             value = { this.state.email }
             onChange = { this.emailChange }
-            /> < /
-            label > <
+            /> < /label >
+            <
             label >
             Number:
             <
@@ -82,8 +82,8 @@ class Header extends React.Component {
     }
 
     render() {
-        const edit = < FontAwesomeIcon icon = { faEdit }
-        />
+        // const edit = < FontAwesomeIcon icon = { faEdit }
+        // />
         const { name, email, number } = this.state;
         return ( <
             div className = "header" >
@@ -94,7 +94,7 @@ class Header extends React.Component {
             div className = "edit"
             onClick = {
                 () => this.setState({ showForm: true })
-            } > { edit } < /div> < /
+            } > {} < /div> < /
             div > <
             div className = "email" > { email } < /div> <
             div className = "phone" > { number } < /div> { this.state.showForm ? this.showForm() : null } < /

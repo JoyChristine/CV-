@@ -31,8 +31,8 @@ class Education extends React.Component {
             name = "school"
             value = { this.state.school }
             onChange = { this.schoolChange }
-            /> <
-            /label> <
+            /> < /
+            label > <
             label >
             Major:
             <
@@ -40,8 +40,8 @@ class Education extends React.Component {
             name = "major"
             value = { this.state.major }
             onChange = { this.majorChange }
-            /> <
-            /label> <
+            /> < /
+            label > <
             label >
             Graduation Date:
             <
@@ -49,13 +49,13 @@ class Education extends React.Component {
             name = "graduation"
             value = { this.state.graduation }
             onChange = { this.graduationChange }
-            /> <
-            /label> <
+            /> < /
+            label > <
             input type = "submit"
             value = "Submit" / >
             <
-            /form> <
-            /div>
+            /form> < /
+            div >
         )
     }
 
@@ -94,17 +94,18 @@ class Education extends React.Component {
             div className = "section-title" > Education < /div> <
             div className = "edit"
             onClick = {
-                () => this.setState({ showForm: true }) } > { edit } < /div> <
-            /div> { this.state.showForm ? this.showForm() : null } <
+                () => this.setState({ showForm: true })
+            } > { edit } < /div> < /
+            div > { this.state.showForm ? this.showForm() : null } <
             div className = "education-content" >
             <
             div className = "leftside" >
             <
             div className = "school" > { school } - < /div> <
-            div className = "major" > { major } < /div> <
-            /div> <
-            div className = "graduation" > { graduation } < /div> <
-            /div> <
+            div className = "major" > { major } < /div> < /
+            div > <
+            div className = "graduation" > { graduation } < /div> < /
+            div > <
             /div>
         )
     }
