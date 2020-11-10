@@ -1,6 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEdit } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEdit } from '@fortawesome/free-solid-svg-icons'
 
 class Education extends React.Component {
     constructor(props) {
@@ -10,9 +10,9 @@ class Education extends React.Component {
         this.graduationChange = this.graduationChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
         this.state = {
-            school: "The King's College",
-            major: "Business",
-            graduation: "06/2022",
+            school: "University",
+            major: "Degree",
+            graduation: "01/2000",
             showForm: false
         }
     }
@@ -83,8 +83,8 @@ class Education extends React.Component {
 
 
     render() {
-        const edit = < FontAwesomeIcon icon = { faEdit }
-        />
+        // const edit = < FontAwesomeIcon icon = { faEdit }
+        // />
         const { school, major, graduation } = this.state
         return ( <
             div className = "education" >
@@ -95,7 +95,7 @@ class Education extends React.Component {
             div className = "edit"
             onClick = {
                 () => this.setState({ showForm: true })
-            } > { edit } < /div> < /
+            } > {} < /div> < /
             div > { this.state.showForm ? this.showForm() : null } <
             div className = "education-content" >
             <
