@@ -15,7 +15,7 @@ export default class Home extends Component {
             <NavBar />
             <div className="nav_container">
                 <div className="row">
-                    <div className="col s12 m4 l3">
+                    <div className="col s12 m7 l2">
                         <Profile />
                     </div>
                     <div className="col s12 m8 l9">
