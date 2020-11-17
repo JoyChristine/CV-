@@ -13,7 +13,7 @@ export default class NavBar extends Component {
                             </Link>
 
                             <Link to="/" data-target="side-nav" className="sidenav-trigger">
-                              <i className="fas fa-ellipsis-v"></i>
+                            <i className="fas fa-chevron-circle-down"></i>
                             </Link>
                             <ul className="right hide-on-med-and-down">
                                 <li>
@@ -43,7 +43,7 @@ export default class NavBar extends Component {
                         </div>
                    </div>
                </nav>
-               <ul className="sidenav" id="side-nav">
+               <ul className="sidenav" id="sidenav">
                    <li>
                         <Link to="/">
                             <i className="fas fa-home"></i> Home
